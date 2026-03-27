@@ -24,7 +24,7 @@ pipeline {
 
         stage('Test') {
             agent {
-                Docker {
+                docker {
                     image 'node:18-alpine'
                     reuseNode true
                 }
